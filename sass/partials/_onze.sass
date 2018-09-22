@@ -1,0 +1,49 @@
+.onze
+  &__slide
+    width: get-vw(1280px)
+    height: get-vw(610px)
+    background: url(../img/mainBg.png) no-repeat
+  &__text
+   margin: get-vw(140px) 0 0 get-vw(645px)
+   padding-bottom: get-vw(30px)
+   width: get-vw(458px)
+   height: get-vw(400px)
+   background: url(../img/textBoxBg.png) no-repeat
+   .title
+     font-size: get-vw(38px)
+     font-weight: 300
+     margin-bottom: get-vw(23px)
+     padding: get-vw(22px) 0 0 get-vw(34px)
+     position: relative
+     text-transform: none
+     &:after
+       content: ''
+       position: absolute
+       bottom: get-vw(-12px)
+       left: get-vw(25px)
+       width: get-vw(405px)
+       height: get-vw(5px)
+       background: url('../img/lineSm.png') 50% 50%
+   p
+     padding: get-vw(5px) get-vw(70px) 0 get-vw(34px)
+
+.slick-prev, .slick-next
+  width: 36px
+  height: 39px
+  background-image: url('../img/arrow.png')
+  background-repeat: no-repeat
+  &:before
+    content: ''
+  &:hover
+    background-image: url('../img/arrow.png')
+  &:focus
+    background-image: url('../img/arrow.png')
+
+.slick-next
+  right: 30px
+
+.slick-prev
+  left: 30px
+  t
+  z-index: 2
+  transform: rotate(-180deg) translateY(50%)

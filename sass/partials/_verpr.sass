@@ -1,0 +1,43 @@
+.verpr
+  background: #fcc941
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: -7px
+    height: 7px
+    width: 100%
+    background: url('../img/verprTopBg.png'), no-repeat, 50% 50%
+  &__wrapper
+    padding: get-vw(40px) 0 get-vw(130px)
+  &__head
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: get-vw(-2px) 0 0 get-vw(-75px)
+    letter-spacing: -.8px
+    img:last-child
+      transform: rotateY(180deg)
+  .title
+    padding: 0 get-vw(35px)
+  &__text
+    display: flex
+    margin-top: get-vw(15px)
+    .text
+      width: 76%
+      margin-bottom: get-vw(5px)
+    a
+      text-decoration: none
+      font-size: get-vw(16px)
+      color: #373737
+      padding-left: get-vw(80px)
+  .heading
+    margin-bottom: get-vw(-7px)
+  &__item
+    position: relative
+    &:nth-child(2)
+      left: get-vw(28px)
+    &:nth-child(3)
+      left: get-vw(55px)
+
+
